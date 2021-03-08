@@ -1,0 +1,52 @@
+$colorRed: #ff0000;
+$colorGreen: #10d113;
+$colorPurple: #da53ef;
+@mixin first_mixin{
+  font-size: 3rem;
+  font-family: serif;
+  color: #4253d6;
+}
+@mixin second_mixin{
+  font-size: 4rem;
+  font-family: Helvetica;
+  color:#d6d611;
+}
+@mixin list_mixin{
+  color: #f7a313;
+  text-decoration: line-through;
+}
+p ~ ul{
+  @include list_mixin;
+}
+.titre{
+  color: $colorPurple;
+}
+h1, strong{
+  color: $colorRed;
+}
+p:first-child{
+  color: $colorGreen;
+}
+p:nth-child(2){
+  @include first_mixin;
+}
+p:nth-child(3), li:first-of-type{
+  @include second_mixin;
+}
+.exo_4{
+  border: 10px dotted green;
+  font-size: 2.5rem;
+  line-height: 2;
+  background-color: #f1ddcf;
+}
+.exo_4_extention{
+  @extend .exo_4;
+  text-decoration: underline;
+}
+p:last-child{
+    border: 15px dashed pink;
+    &:hover {
+        color:yellow;
+        text-decoration: overline;
+    }
+}
