@@ -1,6 +1,8 @@
+/* les variables sont appliquées à la couleur du text */
 $colorRed: #ff0000;
 $colorGreen: #10d113;
 $colorPurple: #da53ef;
+/* Les mixin-type (la taille, la famille et la couleur de la police) appliqués au text */
 @mixin first_mixin{
   font-size: 3rem;
   font-family: serif;
@@ -11,6 +13,7 @@ $colorPurple: #da53ef;
   font-family: Helvetica;
   color:#d6d611;
 }
+/* mixin appliqué aux lists */
 @mixin list_mixin{
   color: #f7a313;
   text-decoration: line-through;

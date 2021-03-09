@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* les variables sont appliquées à la couleur du text */
+/* Les mixin-type (la taille, la famille et la couleur de la police) appliqués au text */
+/* mixin appliqué aux lists */
 p ~ ul {
   color: #f7a313;
   text-decoration: line-through;
