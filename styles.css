@@ -37,15 +37,14 @@ p:nth-child(3), li:first-of-type {
   line-height: 2;
   background-color: #f1ddcf;
 }
-
 .exo_4_extention {
   text-decoration: underline;
 }
 
-p:last-child {
+.corps p:last-child {
   border: 15px dashed pink;
 }
-p:last-child:hover {
+.corps p:last-child:hover {
   color: yellow;
   text-decoration: overline;
 }

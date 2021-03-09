@@ -41,15 +41,18 @@ p:nth-child(3), li:first-of-type{
   font-size: 2.5rem;
   line-height: 2;
   background-color: #f1ddcf;
+  &_extention{
+    @extend .exo_4;
+    text-decoration: underline;
+  }
 }
-.exo_4_extention{
-  @extend .exo_4;
-  text-decoration: underline;
-}
-p:last-child{
+
+.corps {
+  p:last-child{
     border: 15px dashed pink;
     &:hover {
         color:yellow;
         text-decoration: overline;
     }
+}
 }
